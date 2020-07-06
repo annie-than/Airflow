@@ -11,6 +11,7 @@ The purpose of this project is to create high grade data pipelines that are dyna
 Datasets
 --------
 The source data resides in S3 and needs to be processed in Sparkify's data warehouse in Amazon Redshift. The source datasets consist of JSON logs that tell about user activity in the application and JSON metadata about the songs the users listen to. Here are the s3 links for each:
+
 	- Log data: s3://udacity-dend/log_data
 	- Song data: s3://udacity-dend/song_data
 
@@ -18,6 +19,7 @@ The source data resides in S3 and needs to be processed in Sparkify's data wareh
 Project Template
 ----------------
 The project template package contains three major components for the project:
+
 	- DAG with default parameter:
 	 	The DAG does not have dependencies on past runs
 	  	On failure, the task are retried 3 times
@@ -40,7 +42,7 @@ The project template package contains three major components for the project:
 	 	
 	  + Data Quality Operator:
  		Run checks on the data. 
-	 	The operator's main functionality is to receive one or more SQL based test cases along with the expected results and execute the tests. For each the test, the test result and expected 		result needs to be checked and if there is no match, the operator should raise an exception and the task should retry and fail eventually.
+	 	The operator's main functionality is to receive one or more SQL based test cases along with the expected results and execute the tests. For each the test, the test result and expected result needs to be checked and if there is no match, the operator should raise an exception and the task should retry and fail eventually.
 
 
 
